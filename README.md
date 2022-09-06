@@ -1,6 +1,6 @@
 # SAZones
 
-conda create --name SAZones
+conda create --name SAZONES
 conda activate SAZONES
 
 conda install dash dash_bootstrap_components numpy
