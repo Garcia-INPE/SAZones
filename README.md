@@ -1,10 +1,20 @@
 # SAZones
+## South America zones by IA
 
-conda create --name SAZONES
-conda activate SAZONES
+1) In terminal, go to the directory where the directory SAZones will be created
 
-conda install dash dash_bootstrap_components numpy
+2) git clone https://github.com/Garcia-INPE/SAZones
 
-python app.py
+3) cd SAZones
 
-# *** use the link shown in terminal ***
+4) conda create --name SAZONES
+
+5) conda activate SAZONES
+
+6) conda install dash dash_bootstrap_components numpy 
+
+7) python app.py
+
+*** copy the link shown in terminal and paste it in the browser ***
+
+and voilà!
