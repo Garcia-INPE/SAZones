@@ -15,7 +15,7 @@ var_input_fields = [x.split("_")[0].split('.')[0] for x in fnames_input_fields]
 var_input_aux = ["LON", "LAT"]
 var_input_all = var_input_aux + var_input_fields
 dic_options = [{"label": "Yes", "value": True}, {"label": "No", "value": False}]
-dic_options2 = [{"label": 5, "value": 5}, {"label": 7, "value": 7}]
+dic_options2 = [{"label": 4, "value": 4}, {"label": 5, "value": 5}]
 sty_fields = {'max-height':'100%', 'max-width':'100%', 'margin':'auto'}
 sty_radio = {'text-align':'center', 'padding':'0px', 'border':'1px solid'}
 sty_radio2 = {'text-align':'center', 'border':'1px solid', 'display':'inline-block'}
@@ -104,16 +104,16 @@ def update_fields(show_lon, show_lat, show_fld_00, show_fld_01, show_fld_02, sho
     #print(fnames)
 
     # Separa os arquivos entre os métodos e qtd de clusteres
-    keys=["KMeans", "5"]
+    keys=["KMeans", "4"]
     list1 = [fname for fname in fnames if all(item in fname for item in keys)]
 
-    keys=["KMeans", "7"]
+    keys=["GaussianMixture", "4"]
     list2 = [fname for fname in fnames if all(item in fname for item in keys)]
 
-    keys=["GaussianMixture", "5"]
+    keys=["KMeans", "5"]
     list3 = [fname for fname in fnames if all(item in fname for item in keys)]
 
-    keys=["GaussianMixture", "7"]
+    keys=["GaussianMixture", "5"]
     list4 = [fname for fname in fnames if all(item in fname for item in keys)]
     
     #print("Var yes:", variablesYes, "\nVar no.:", variablesNo)
