@@ -3,17 +3,23 @@
 
 1) In terminal, go to the directory where the directory SAZones will be created
 
-2) git clone https://github.com/Garcia-INPE/SAZones (if you already have a directory SAZones, delete it --- caution with your local changes ---"
+2) If you already have the SAZones directory
+   - Delete it --- caution with your local changes ---
 
-3) cd SAZones
+3) If you don't have the SAZones diretory
+   - git clone https://github.com/Garcia-INPE/SAZones
 
-4) conda create --name SAZONES
+4) cd SAZones
 
-5) conda activate SAZONES
+5) If you don't have the conda environment SAZONES created
+   - conda create --name SAZONES
 
-6) conda install dash numpy dash-bootstrap-components
+6) If you already have the conda environment SAZONES created
+   - conda activate SAZONES
 
-7) python app.py
+7) conda install dash numpy dash-bootstrap-components
+
+8) python app.py
 
 *** copy the link shown in terminal and paste it in the browser ***
 
